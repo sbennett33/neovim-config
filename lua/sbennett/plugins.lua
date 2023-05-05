@@ -27,15 +27,18 @@ require("lazy").setup({
       { 'neovim/nvim-lspconfig' },
       {
         'williamboman/mason.nvim',
-        build = function()
-          pcall(vim.cmd, 'MasonUpdate')
-        end,
+        build = ":MasonUpdate",
       },
       { 'williamboman/mason-lspconfig.nvim' },
       { 'hrsh7th/nvim-cmp' },
       { 'hrsh7th/cmp-nvim-lsp' },
       { 'hrsh7th/cmp-buffer' },
       { 'L3MON4D3/LuaSnip' },
+      { 'saadparwaiz1/cmp_luasnip' },
+      { 'hrsh7th/cmp-vsnip' },
+      { 'hrsh7th/vim-vsnip' },
+      { "rafamadriz/friendly-snippets" },
+      { "jose-elias-alvarez/null-ls.nvim" },
     }
   },
   {
