@@ -39,6 +39,7 @@ require("lazy").setup({
       { 'hrsh7th/vim-vsnip' },
       { "rafamadriz/friendly-snippets" },
       { "jose-elias-alvarez/null-ls.nvim" },
+      { "folke/neodev.nvim" }
     }
   },
   {
