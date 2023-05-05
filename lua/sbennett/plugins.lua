@@ -77,5 +77,10 @@ require("lazy").setup({
       "jfpedroza/neotest-elixir"
     }
   },
-  { "tpope/vim-projectionist" }
+  { "tpope/vim-projectionist" },
+  { "numToStr/Comment.nvim",  config = true },
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  }
 })
