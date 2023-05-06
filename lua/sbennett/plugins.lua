@@ -83,5 +83,6 @@ require("lazy").setup({
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
-  { "moll/vim-bbye" }
+  { "moll/vim-bbye" },
+  { "Shatur/neovim-session-manager", config = true }
 })
