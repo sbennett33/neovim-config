@@ -84,5 +84,5 @@ require("lazy").setup({
     dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
   { "moll/vim-bbye" },
-  { "Shatur/neovim-session-manager", config = true }
+  { "Shatur/neovim-session-manager" }
 })
