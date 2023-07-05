@@ -13,3 +13,5 @@ vim.keymap.set("n", "Q", vim.cmd.qa)
 vim.keymap.set("n", "q", vim.cmd.Bdelete)
 
 vim.keymap.set("n", "<leader>n", vim.cmd.cnext)
+
+vim.keymap.set("n", "<leader>xx", vim.cmd.TroubleToggle)
