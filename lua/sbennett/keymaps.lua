@@ -1,8 +1,10 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.keymap.set("n", "<leader>\\", vim.cmd.vsplit, { silent = true })
-vim.keymap.set("n", "<leader>-", vim.cmd.split, { silent = true })
+opts = { noremap = true, silent = true }
+
+vim.keymap.set("n", "<leader>\\", vim.cmd.vsplit, opts)
+vim.keymap.set("n", "<leader>-", vim.cmd.split, opts)
 
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>")
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>")
@@ -15,3 +17,6 @@ vim.keymap.set("n", "q", vim.cmd.Bdelete)
 vim.keymap.set("n", "<leader>n", vim.cmd.cnext)
 
 vim.keymap.set("n", "<leader>xx", vim.cmd.TroubleToggle)
+
+vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)

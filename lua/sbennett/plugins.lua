@@ -85,10 +85,19 @@ require("lazy").setup({
   },
   { "moll/vim-bbye" },
   { "Shatur/neovim-session-manager" },
-  { "github/copilot.vim" },
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
-  { "f-person/git-blame.nvim" }
+  { "f-person/git-blame.nvim" },
+  {
+    "zbirenbaum/copilot-cmp",
+    dependencies = { 'zbirenbaum/copilot.lua' }
+  },
+  { "lewis6991/gitsigns.nvim", config = true },
+  {
+    'akinsho/bufferline.nvim',
+    version = "*",
+    dependencies = 'nvim-tree/nvim-web-devicons',
+  }
 })
