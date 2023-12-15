@@ -20,3 +20,8 @@ vim.keymap.set("n", "<leader>xx", vim.cmd.TroubleToggle)
 
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
+
+-- Visual --
+-- Stay in indent mode
+vim.keymap.set("v", "<", "<gv^", opts)
+vim.keymap.set("v", ">", ">gv^", opts)
